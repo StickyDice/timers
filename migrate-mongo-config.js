@@ -7,7 +7,7 @@ const config = {
     url: process.env.DB_URI,
 
     // TODO Change this to your database name:
-    databaseName: process.env.DB_NAME,
+    databaseName: "app",
 
     options: {
       useNewUrlParser: true, // removes a deprecation warning when connecting
