@@ -169,8 +169,6 @@ wss.on("connection", async (ws, req) => {
   });
 });
 
-const port = process.env.PORT || 3000;
-
-server.listen(port, () => {
-  console.log(`Listening on http://localhost:${port}`);
+server.listen(80, () => {
+  console.log(`Listening on http://localhost:${80}`);
 });
