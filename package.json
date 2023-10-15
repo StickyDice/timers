@@ -63,7 +63,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "migrate-mongo": "^10.0.0",
-    "mongodb": "^5.0.0",
+    "mongodb": "^4.17.1",
     "nanoid": "^3.1.10",
     "nunjucks": "^3.2.1",
     "ws": "^8.14.2"
