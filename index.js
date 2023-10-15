@@ -51,7 +51,7 @@ app.use(cookieParser());
 app.use(async (req, res, next) => {
   try {
     const client = await clientPromise;
-    req.db = client.db("users");
+    req.db = client.db("app");
     next();
   } catch (err) {
     next(err);
@@ -111,7 +111,7 @@ app.use("/api/timers", require("./timers"));
 
 server.on("upgrade", async (req, socket, head) => {
   const client = await clientPromise;
-  req.db = client.db("users");
+  req.db = client.db("app");
 
   const cookies = cookie.parse(req.headers["cookie"]);
   const token = cookies && cookies["token"];
