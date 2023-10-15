@@ -8,7 +8,7 @@
   "scripts": {
     "dev:migrate": "migrate-mongo up",
     "dev": "npm run dev:migrate && nodemon index.js -e js,njk",
-    "start": "npm run db:migrate && node index.js -e js,njk",
+    "start": "npm run dev:migrate && node index.js -e js,njk",
     "test": "echo \"Tests passed\" && exit 0",
     "prettify": "prettier --write",
     "prettify:all": "prettier --write \"./**/*.{js,json}\"",
