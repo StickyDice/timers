@@ -104,6 +104,4 @@ dist
 
 *.sample.js
 
-.env
-
 test.js
