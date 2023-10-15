@@ -137,10 +137,6 @@ wss.on("connection", async (ws, req) => {
     clients.delete(userId);
   });
 
-  ws.addEventListener("open", () => {
-    console.log("asdhkfjlabsdjfhklasnmdbhfjsdaf")
-  })
-
   ws.on("message", async (message) => {
     let data;
     try {
@@ -169,8 +165,8 @@ wss.on("connection", async (ws, req) => {
   });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
-app.listen(port, () => {
-  console.log(`Listening on http://localhost:${80}`);
+server.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
 });
